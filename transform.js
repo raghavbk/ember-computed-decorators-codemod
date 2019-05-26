@@ -76,9 +76,9 @@ function transform(file, api /*, options*/ ) {
     computedDecoratorImports.forEach(imported => {
       let added = false
       if (imported === 'default') {
-        addNewImport('@ember-decorators/object', 'computed')
+        addNewImport('@ember/object', 'computed')
       } else {
-        addNewImport('@ember-decorators/object/computed', imported)
+        addNewImport('@ember/object/computed', imported)
       }
     })
 
